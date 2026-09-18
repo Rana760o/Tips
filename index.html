@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIP Investment Learning tips</title>
+<meta name="description" content="Learn SIP (Systematic Investment Plan) — simple, step-by-step investment education. Join the free learning community.">
+<meta name="facebook-domain-verification" content="h98mqxm5x6qn701al63ntym4avuort" />
+
+<!-- ============================================= -->
+<!-- META PIXEL — replace YOUR_PIXEL_ID below       -->
+<!-- ============================================= -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1075266308328210');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1075266308328210&ev=PageView&noscript=1"
+/></noscript>
+<!-- ============================================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #060608;
+    --card-line: #33E0FF;
+    --glow: rgba(51,224,255,0.35);
+    --ink: #F3F3F5;
+    --ink-soft: #C7CAD1;
+    --divider: #24262C;
+    --btn-a: #2FA8F0;
+    --btn-b: #8B4CF0;
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  img{ max-width:100%; display:block; }
+
+  .page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding: 16px 14px 24px;
+  }
+
+  .card{
+    width:100%;
+    max-width: 440px;
+    border: 1.5px solid var(--card-line);
+    border-radius: 22px;
+    box-shadow: 0 0 24px var(--glow), inset 0 0 24px rgba(51,224,255,0.06);
+    padding: 24px 22px 18px;
+    text-align: center;
+  }
+
+  .avatar-wrap{
+    width: 116px;
+    height: 116px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    padding: 4px;
+    background: #060608;
+    box-shadow: 0 0 18px var(--glow), 0 0 0 1.5px var(--card-line);
+  }
+  .avatar-wrap img{
+    width:100%; height:100%;
+    border-radius:50%;
+    object-fit:cover;
+  }
+  .avatar-fallback{
+    width:100%; height:100%;
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:#0B0C10;
+    font-size: 1.8rem;
+    font-weight:600;
+    color: var(--card-line);
+  }
+
+  h1{
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin: 0 0 16px;
+  }
+
+  .features{
+    list-style:none;
+    margin:0 0 18px;
+    padding:0;
+    text-align:left;
+  }
+  .features li{
+    display:flex;
+    align-items:center;
+    gap: 12px;
+    padding: 10px 4px;
+    border-bottom: 1px solid var(--divider);
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+  }
+  .features li:last-child{ border-bottom:none; }
+  .features .icon{ font-size: 1.15rem; flex-shrink:0; width:24px; text-align:center; }
+
+  .invite{
+    font-size: 0.92rem;
+    color: var(--ink);
+    margin: 0 0 16px;
+    line-height: 1.4;
+  }
+
+  .cta-btn{
+    position: relative;
+    overflow: hidden;
+    display:block;
+    width:100%;
+    background: linear-gradient(90deg, var(--btn-a), var(--btn-b));
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    text-decoration:none;
+    padding: 14px 0;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(139,76,240,0.45);
+    border:none;
+    cursor:pointer;
+    margin-bottom: 16px;
+  }
+  .cta-btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(
+      100deg,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.75) 50%,
+      rgba(255,255,255,0) 100%
+    );
+    transform: skewX(-20deg);
+    animation: shimmer 2.6s ease-in-out infinite;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .cta-btn span{
+    position: relative;
+    z-index: 2;
+  }
+  @keyframes shimmer{
+    0%   { left: -60%; }
+    45%  { left: 130%; }
+    100% { left: 130%; }
+  }
+
+  .quote{
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    line-height: 1.4;
+    margin: 0 0 14px;
+  }
+
+  .agency-badge{
+    display:inline-block;
+    border: 1px solid var(--divider);
+    border-radius: 18px;
+    padding: 10px 20px;
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  .agency-badge b{
+    background: linear-gradient(90deg, var(--btn-a), var(--btn-b));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+  }
+
+  .legal-links{
+    font-size: 0.72rem;
+    color: #7A7D85;
+    margin-bottom: 10px;
+  }
+  .legal-links a{ color:#7A7D85; text-decoration:none; }
+
+  .disclaimer{
+    font-size: 0.65rem;
+    color: #5B5E66;
+    line-height: 1.4;
+    border-top: 1px solid var(--divider);
+    padding-top: 10px;
+  }
+
+  @media (max-width: 380px){
+    .avatar-wrap{ width:100px; height:100px; }
+    h1{ font-size: 1.15rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="card">
+
+    <div class="avatar-wrap">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SIP growth logo">
+        <defs>
+          <linearGradient id="logoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#2FA8F0"/>
+            <stop offset="100%" stop-color="#8B4CF0"/>
+          </linearGradient>
+        </defs>
+        <circle cx="60" cy="60" r="58" fill="#0B0C10" stroke="url(#logoGrad)" stroke-width="2"/>
+        <rect x="30" y="66" width="10" height="22" rx="2" fill="url(#logoGrad)"/>
+        <rect x="46" y="56" width="10" height="32" rx="2" fill="url(#logoGrad)"/>
+        <rect x="62" y="44" width="10" height="44" rx="2" fill="url(#logoGrad)"/>
+        <rect x="78" y="32" width="10" height="56" rx="2" fill="url(#logoGrad)"/>
+        <path d="M30 50 L52 34 L68 42 L90 22" stroke="#33E0FF" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M78 22 L90 22 L90 34" stroke="#33E0FF" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <h1>HAJI SALMAN MEMON</h1>
+
+    <ul class="features">
+      <li><span class="icon">📈</span> SIP Investment Basics</li>
+      <li><span class="icon">💰</span> Wealth Building Through SIP</li>
+      <li><span class="icon">🎯</span> Goal-Based Investing</li>
+      <li><span class="icon">📊</span> Simple Fund Selection Tips</li>
+    </ul>
+
+    <p class="invite">Join our learning community and understand SIP investing the right way</p>
+
+    <a href="https://t.me/+paV_PBkVk6Y5YjNl" class="cta-btn" id="joinBtn"><span>JOIN TELEGRAM</span></a>
+
+    <p class="quote">नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती है।</p>
+
+    <div class="agency-badge">This Channel Advertise By <b>RANA ADS AGENCY</b><br><a href="https://t.me/ranaadsagency" style="color:var(--ink-soft); text-decoration:none; font-size:0.8em;">@ranaadsagency</a></div>
+
+    <div class="legal-links">
+      <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Disclaimer</a>
+    </div>
+
+    <div class="disclaimer">
+      Educational content on SIP &amp; mutual fund investing only — not personalised investment advice or guaranteed returns. Mutual fund investments are subject to market risk. This site is not part of Facebook™ or endorsed by Facebook™.
+    </div>
+
+  </div>
+</div>
+
+<script>
+  document.getElementById('joinBtn').addEventListener('click', function(e){
+    e.preventDefault();
+    var target = this.href;
+    if (typeof fbq === 'function') { fbq('track', 'Lead'); }
+    setTimeout(function(){ window.location.href = target; }, 150);
+  });
+</script>
+
+</body>
+</html>
