@@ -258,7 +258,7 @@ src="https://www.facebook.com/tr?id=1075266308328210&ev=PageView&noscript=1"
   document.getElementById('joinBtn').addEventListener('click', function(e){
     e.preventDefault();
     var target = this.href;
-    if (typeof fbq === 'function') { fbq('track', 'Lead'); }
+    if (typeof fbq === 'function') { fbq('track', 'Subscribe'); }
     setTimeout(function(){ window.location.href = target; }, 150);
   });
 </script>
